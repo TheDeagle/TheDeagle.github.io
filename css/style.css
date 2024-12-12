@@ -1,0 +1,607 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url("../img/background.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100dvh;
+	overflow-x: hidden;
+}
+
+#Main {
+	height: 100dvh;
+	overflow: auto;
+	scroll-snap-type: y mandatory;
+}
+
+section {
+	position: relative;
+	height: 100dvh;
+	width: 100vw;
+	scroll-snap-align: start;
+}
+
+#sec1 {
+	display: grid;
+	align-items: center;
+	flex-direction: column;
+	justify-items: center;
+}
+
+#sec2, #sec4 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+#sec4 {
+	justify-content: flex-end;
+}
+
+#sec3 {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.bg-video {
+	position: fixed;
+	left: 0;
+	top: 0;
+	background-size: cover;
+	background: no-repeat center;
+	user-select: none;
+	pointer-events: none;
+  
+	filter: grayscale(0.8);
+  
+	height: 100%;
+	width: 177.77777778dvh; /* 100 * 16 / 9 */
+	min-width: 100%;
+	min-height: 56.25vw; /* 100 * 9 / 16 */
+}
+
+.youtube-container {
+	overflow: hidden;
+	width: 100%;
+	pointer-events: none;
+	
+	iframe {
+		width: 300%;
+		height: 100%;
+		margin-left: -100%;
+	}
+}
+#Section1Info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 30px;
+}
+
+#name {
+	top: 0;
+	margin-top: 30px;
+	font-family: 'Lato', sans-serif;
+	font-weight: 1000;
+	color: white;
+	font-size: 70px;
+}
+
+#Experty {
+	top: -20px;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	font-size: 35px;
+}
+
+#Img {
+	position: relative;
+	top: 0px;
+	background-image: url("../img/IMG_1233.JPG");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 40vw;
+	height: 40vw;
+	/* border-radius: 50%; */
+	border-top-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+}
+
+#WelcomeText {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	width: 80vw;
+	max-width: 700px;
+	color: white;
+}
+
+#SkillsScreen {
+	position: relative;
+    background-color: #14232e ;
+    width: 79vw;
+	max-width: 850px;
+    height: 55dvh;
+	top: 7%;
+    border-radius: 2%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-width: 296.25px;
+}
+
+.Skill {
+	display: flex;
+	justify-content: center;
+	align-items: last baseline;
+	width: 13vw;
+	max-width: 142px;
+	height: 150px;
+	border-radius: 12px;
+	background-color: #1a2f3e;
+	color: white;
+	min-width: 93.75px;
+	/* min-width: 102.25px; */
+}
+
+.Skills {
+	height: 50%;
+	width: 100%;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	grid-template-columns: auto auto auto auto auto;
+	scroll-snap-align: center;
+}
+
+#SkillText {
+	position: absolute;
+	top: 5%;
+	font-family: 'Roboto';
+	color: white;
+	font-size: 70px;
+	font-weight: 700;
+}
+
+#VerLine {
+	position: absolute;
+	top: 14%;
+	width: 1px;
+	height: 14.5dvh;
+	background-color: white;
+}
+
+#HLines {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+	position: absolute;
+	top: 7.5%;
+	width: 200px;
+	height: 50px;
+}
+
+.HLine {
+	width: 50px;
+	height: 1.05px;
+	background-color: rgba(255, 255, 255, 0.925);
+	box-shadow: none;
+}
+
+.HLine1 {
+	box-shadow: 0 0 20px 3px white;
+}
+
+#SkillsContainer {
+	gap: 100px;
+	width: 87.6%;
+	display: flex;
+	overflow-x: scroll;
+	overflow-y: visible;
+	-ms-overflow-style: none;
+	-webkit-overflow-scrolling: touch;
+	scrollbar-width: none;
+	scroll-snap-type: x mandatory;
+	
+}
+
+#SkillsContainer::-webkit-scrollbar {
+	display: none;
+}
+
+
+#Skill1 {
+	background-image: url("../img/C.png");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill2 {
+	background-image: url("../img/CPP.png");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill3 {
+	background-image: url("../img/Assembly.png");
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill4 {
+	background-image: url("../img/Python.svg");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill5 {
+	background-image: url("../img/bash.png");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill6 {
+	background-image: url("../img/html.svg");
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill7 {
+	background-image: url("../img/css.svg");
+	background-size: 65%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill8 {
+	background-image: url("../img/js.png");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill9 {
+	background-image: url("../img/django.webp");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#Skill10 {
+	background-image: url("../img/three.png");
+	background-size: 70%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill11 {
+	background-image: url("../img/Mariadb.png");
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: 50% 45%;
+}
+
+#Skill12 {
+	background-image: url("../img/Postgres.png");
+	background-size: 150%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill13 {
+	background-image: url("../img/nginx.svg");
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill14 {
+	background-image: url("../img/docker.png");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill15 {
+	background-image: url("../img/DockerCompose.png");
+	background-size: 120%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill16 {
+	background-image: url("../img/virtualization.png");
+	background-size: 90%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill17 {
+	background-image: url("../img/github.png");
+	background-size: 110%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+#Skill18 {
+	background-image: url("../img/networking.png");
+	background-size: 95%;
+	background-repeat: no-repeat;
+	background-position: 50% 40%;
+}
+
+#Skill19 {
+	background-image: url("../img/Linux.png");
+	background-size: 60%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
+span {
+	position: relative;
+	top: -2.5%;
+	font-size: 14px;
+	text-shadow: 0 0 15px rgba(255, 255, 255, 0.753);
+}
+
+#ProjectContainer {
+	height: 74.9%;
+	width: 100%;
+	margin-bottom: 2.5%;
+	display: flex;
+	flex-direction: column;
+	gap: .5dvh;
+}
+
+.Rows {
+	display: flex;
+	gap: .5dvh;
+	height: 28%;
+	width: 100%;
+	overflow-x: scroll;
+	overflow: scroll;
+	scrollbar-width: none;
+}
+
+.Project {
+	width: 30vw;
+	min-width: 500px;
+	background-color: darkslategrey;
+}
+
+.Project1 {
+    background-image: url("../img/libft.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Project2 {
+    background-image: url("../img/born.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Project3 {
+    background-image: url("../img/gnl.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Project4 {
+    background-image: url("../img/printf.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Project5 {
+    background-image: url("../img/minitalk.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Project6 {
+    background-image: url("../img/minitalk.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Project7 {
+    background-image: url("../img/push_swap.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Project8 {
+    background-image: url("../img/philosophers.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Project9 {
+    background-image: url("../img/minishell.png");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.Project10 {
+    background-image: url("../img/netpractice.webp");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#sec6 {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 50px;
+}
+
+#Github, #Linkedin {
+	width: 25vw;
+	height: 25vw;
+	max-width: 200px;
+	max-height: 200px;
+	border-radius: 50%;
+	background: radial-gradient(circle at 100px 100px, #4675a7, #000);
+	cursor: pointer;
+	z-index: 2;
+	transition: scale .3s ease;
+}
+
+#Github:hover, #Linkedin:hover {
+	scale: 1.1;
+}
+
+#InnerGithub, #InnerLinkedin {
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+
+#InnerGithub {
+	background-image: url("../img/github1.png");
+	background-size: 108% 108%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#InnerLinkedin {
+	background-image: url("../img/linkedin.webp");
+	background-size: 170% 170%;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+@media only screen and (min-width: 1800px) {
+    #Img {
+		width: 25vw;
+		height: 25vw;
+	}
+	.Skill {
+		height: 18dvh;
+	}
+}
+
+/* @media only screen and (max-width: 700px) {
+	#SkillsScreen {
+		top: 0px;
+		height: 450px;
+	}
+	.Skill {
+		height: 120px;
+	}
+} */
+
+/* @media only screen and (max-width: 900px) {
+	#SkillsScreen {
+		top: 0px;
+		height: 450px;
+	}
+	.Skill {
+		height: 120px;
+		width: 13.4vw;
+	}
+} */
+
+@media only screen and (max-width: 500px) {
+	#sec6 {
+		flex-direction: column;
+	}
+	#Github, #Linkedin {
+		width: 150px;
+		height: 150px;
+	}
+	#name {
+		font-family: 'Roboto', sans-serif;
+		font-size: 32px;
+	}
+	#Experty {
+		position: relative;
+		top: -20px;
+		font-size: 30px;
+		font-family: 'Lato', sans-serif;
+	}
+	#Img {
+		width: 200px;
+		height: 200px;
+		border-top-left-radius: 30px;
+		border-bottom-right-radius: 30px;
+	}
+	#WelcomeText {
+		font-size: 15px;
+	}
+	#SkillText {
+		font-size: 50px;
+		top: 20px;
+	}
+	#VerLine {
+		top: 80px;
+	}
+	#SkillsScreen {
+		overflow: visible;
+		height: 488px;
+	}
+	#SkillsContainer {
+		width: 100%;
+		height: 80%;
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		z-index: 10;
+	}
+	.Skills	{
+		position: relative;
+		left: 50%;
+		width: 100%;
+		grid-template-columns: auto auto;
+		margin: 0;
+	}
+	.Skill {
+		height: 120px;
+		width: 104%;
+	}
+	span {
+		font-size: 11px;
+	}
+	.Skill20 {
+		opacity: 0;
+	}
+	#HLines {
+		top: 32px;
+		height: 0.1px;
+		width: 170px;
+	}
+}
+
+/* #useless {
+	position: absolute;
+	height: 100dvh;
+	width: 100vw;
+	z-index: 2;
+} */

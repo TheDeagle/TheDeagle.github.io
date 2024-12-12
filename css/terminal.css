@@ -1,0 +1,101 @@
+#bar {
+    text-align: center;
+    width: 75vw;
+    height: 25px;
+    max-width: 950px;
+    background-color: #284255;
+    margin: 0 auto;
+    font-family: monospace;
+    padding: auto;
+    float: none;
+    top: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#red {
+    background-color: #E94B35;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -47%;
+    bottom: -20%;
+    position:relative;
+}
+#yellow {
+    background-color: #f0f000;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -44%;
+    bottom: 40%;
+    position:relative;
+    display: block;
+}
+#green {
+    background-color: #1AAF5C;
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    margin: 0 auto;
+    left: -41%;
+    bottom: 99%;
+    position:relative;
+    display: block;
+}
+#screen {
+    background-color: #192a37 ;
+    width: 75vw;
+    height: 55vh;
+    max-width: 950px;
+    max-height: 600px;
+    border-bottom-left-radius: 2%;
+    border-bottom-right-radius: 2%;
+    margin: 0 auto;
+    padding: 1px;
+	display: flex;
+	justify-content: center;
+}
+#TermText {
+	position: relative;
+    font-size: min(1.30vw, 13.5px);
+	top: 5%;
+	color: white;
+	width: 90%;
+	font-family: "Courier New";
+	&:after{
+		content: "|";
+		animation: blink 500ms linear infinite alternate;
+	}
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    #red{
+        width: 11px;
+        height: 11px;
+        top: 6.5px;
+        left: -122px;
+    }
+    #yellow{
+        width: 10px;
+        height: 10px;
+        top: -4px;
+        left: -85px;
+    }
+    #green{
+        width: 10.5px;
+        height: 10.5px;
+        top: -14px;
+        left: -104px;
+    }
+    #TermText {
+		font-size: 9px;
+	}
+    #screen {
+        height: 500px
+    }
+
+}
