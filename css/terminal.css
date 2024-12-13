@@ -56,6 +56,7 @@
     padding: 1px;
 	display: flex;
 	justify-content: center;
+    min-height: 400px;
 }
 #TermText {
 	position: relative;
@@ -70,7 +71,11 @@
 	}
 }
 
-
+@media only screen and (max-height: 800px) {
+    #TermText {
+        font-size: 11px;
+    }
+}
 
 @media only screen and (max-width: 500px) {
     #red{
