@@ -21,6 +21,7 @@ section {
 	position: relative;
 	height: 100dvh;
 	width: 100vw;
+	min-height: 700px;
 	scroll-snap-align: start;
 }
 
@@ -463,7 +464,7 @@ span {
 	gap: 50px;
 }
 
-#Github, #Linkedin {
+#Github, #Linkedin, #Gmail  {
 	width: 25vw;
 	height: 25vw;
 	max-width: 200px;
@@ -475,14 +476,21 @@ span {
 	transition: scale .3s ease;
 }
 
-#Github:hover, #Linkedin:hover {
+#Github:hover, #Linkedin:hover, #Gmail:hover {
 	scale: 1.1;
 }
 
-#InnerGithub, #InnerLinkedin {
+#InnerGithub, #InnerLinkedin, #InnerGmail {
 	height: 100%;
 	width: 100%;
 	border-radius: 50%;
+}
+
+#InnerGmail {
+	background-image: url("../img/gmail.png");
+	background-size: 60% 50%;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 #InnerGithub {
@@ -544,9 +552,9 @@ span {
 	#sec6 {
 		flex-direction: column;
 	}
-	#Github, #Linkedin {
-		width: 150px;
-		height: 150px;
+	#Github, #Linkedin, #Gmail {
+		width: 140px;
+		height: 140px;
 	}
 	#name {
 		font-family: 'Roboto', sans-serif;
