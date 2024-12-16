@@ -164,9 +164,15 @@ const desktopSkills = `<div class="Skills Skills1">
 
 
 if (window.innerWidth <= 500) {
+    document.getElementById("HLines").innerHTML = `<div class="HLine HLine1"></div>
+                        <div class="HLine HLine2"></div>
+                        <div class="HLine HLine3"></div>
+                        <div class="HLine HLine4"></div>`;
     handleMobile();
 }
 else {
+    document.getElementById("HLines").innerHTML = `<div class="HLine HLine1"></div>
+                        <div class="HLine HLine2"></div>`;
     handleDesktop();
 }
 
@@ -214,6 +220,20 @@ function handleMobile(){
 }
 
 function handleDesktop() {
+    document.getElementById("SkillsContainer").addEventListener("scroll", function(){
+        if (this.scrollLeft < 350) {
+            _hLines[0].style.boxShadow = "0 0 20px 3px white"
+            _hLines[1].style.boxShadow = "none";
+            _hLines[2].style.boxShadow = "none"
+            _hLines[3].style.boxShadow = "none";
+        }
+        if (this.scrollLeft > 350 && this.scrollLeft < 650) {
+            _hLines[0].style.boxShadow = "none";
+            _hLines[1].style.boxShadow = "0 0 20px 3px white"
+            _hLines[2].style.boxShadow = "none"
+            _hLines[3].style.boxShadow = "none";
+        }
+    });
     document.getElementById("SkillsContainer").innerHTML = desktopSkills;
 }
 
