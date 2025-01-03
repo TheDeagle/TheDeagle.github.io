@@ -100,9 +100,9 @@ const mobileSkills = `<div class="Skills Skills1">
                         <div class="Skill" id="Skill2"><span>C++</span></div>
                         <div class="Skill" id="Skill3"><span>Assembly</span></div>
                         <div class="Skill" id="Skill4"><span>Python</span></div>
-                        <div class="Skill" id="Skill5"><span>Bash</span></div>
+                        <div class="Skill" id="Skill44"><span>Java</span></div>
                         <div class="Skill" id="Skill6"><span>HTML</span></div>
-                    </div>
+                        </div>
                     <div class="Skills Skills3">
                         <div class="Skill" id="Skill7"><span>CSS</span></div>
                         <div class="Skill" id="Skill8"><span>Javascript</span></div>
@@ -112,16 +112,16 @@ const mobileSkills = `<div class="Skills Skills1">
                         <div class="Skill" id="Skill12"><span>Postgres</span></div>
                     </div>
                         <div class="Skills Skills4">
+                        <div class="Skill" id="Skill5"><span>Bash</span></div>
                         <div class="Skill" id="Skill13"><span>Nginx</span></div>
                         <div class="Skill" id="Skill14"><span>Docker</span></div>
                         <div class="Skill" id="Skill15"><span>D/Compose</span></div>
                         <div class="Skill" id="Skill16"><span>Virtualization</span></div>
                         <div class="Skill" id="Skill17"><span>Git</span></div>
-                        <div class="Skill" id="Skill18"><span>Networking</span></div>
-                    </div>
+                        </div>
                         <div class="Skills Skills5">
                         <div class="Skill" id="Skill19"><span>Linux Sys Admin</span></div>
-                        <div class="Skill Skill20"></div>
+                        <div class="Skill" id="Skill18"><span>Networking</span></div>
                         <div class="Skill Skill20"></div>
                         <div class="Skill Skill20"></div>
                         <div class="Skill Skill20"></div>
@@ -141,8 +141,8 @@ const desktopSkills = `<div class="Skills Skills1">
                         <div class="Skill" id="Skill2"><span>C++</span></div>
                         <div class="Skill" id="Skill3"><span>Assembly</span></div>
                         <div class="Skill" id="Skill4"><span>Python</span></div>
-                        <div class="Skill" id="Skill5"><span>Bash</span></div>
-
+                        <div class="Skill" id="Skill44"><span>Java</span></div>
+                        
                         <div class="Skill" id="Skill6"><span>HTML</span></div>
                         <div class="Skill" id="Skill7"><span>CSS</span></div>
                         <div class="Skill" id="Skill8"><span>Javascript</span></div>
@@ -150,12 +150,13 @@ const desktopSkills = `<div class="Skills Skills1">
                         <div class="Skill" id="Skill10"><span>Three.js</span></div>
                     </div>
                         <div class="Skills Skills2">
+                        <div class="Skill" id="Skill5"><span>Bash</span></div>
                         <div class="Skill" id="Skill11"><span>Mariadb</span></div>
                         <div class="Skill" id="Skill12"><span>Postgres</span></div>
                         <div class="Skill" id="Skill13"><span>Nginx</span></div>
                         <div class="Skill" id="Skill14"><span>Docker</span></div>
+                        
                         <div class="Skill" id="Skill15"><span>D/Compose</span></div>
-
                         <div class="Skill" id="Skill16"><span>Virtualization</span></div>
                         <div class="Skill" id="Skill17"><span>Git</span></div>
                         <div class="Skill" id="Skill18"><span>Networking</span></div>
@@ -236,4 +237,5 @@ function handleDesktop() {
     });
     document.getElementById("SkillsContainer").innerHTML = desktopSkills;
 }
+
 

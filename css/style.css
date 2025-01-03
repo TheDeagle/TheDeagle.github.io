@@ -249,6 +249,13 @@ section {
 	background-position: 50% 35%;
 }
 
+#Skill44 {
+	background-image: url("../img/Java.png");
+	background-size: 155%;
+	background-repeat: no-repeat;
+	background-position: 50% 35%;
+}
+
 #Skill5 {
 	background-image: url("../img/bash.png");
 	background-size: 70%;
@@ -624,4 +631,5 @@ span {
 	width: 100vw;
 	z-index: 2;
 } */
+
 
